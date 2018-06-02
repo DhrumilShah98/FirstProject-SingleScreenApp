@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true"
+    tools:context="com.example.dhrumilshah.tinello.MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/tinello_logo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/tinello_logo"
+            android:adjustViewBounds="true"
+            android:layout_marginStart="@dimen/margin_6"
+            android:layout_marginEnd="@dimen/margin_6"
+            android:contentDescription="@string/tinelloLogo"/>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/tinello_gallery"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_pager_height"
+            android:layout_margin="@dimen/margin_6">
+        </android.support.v4.view.ViewPager>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_6"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tinello_zomato"
+                style="@style/text_view_zed"
+                android:text="@string/zomato"
+                android:background="@color/zomatoBackground"
+                android:textColor="@color/zomatoText" />
+            <TextView
+                android:id="@+id/tinello_easydinner"
+                style="@style/text_view_zed"
+                android:text="@string/easydinner"
+                android:background="@color/easydinnerBackgroud"
+                android:textColor="@color/easydinnerText" />
+            <TextView
+                android:id="@+id/tinello_dineout"
+                style="@style/text_view_zed"
+                android:text="@string/dineout"
+                android:background="@color/dineoutBackground"
+                android:textColor="@color/dineoutText" />
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tinello_address"
+            style="@style/text_view_ahpw"
+            android:text="@string/address"
+            android:drawableStart="@drawable/address_icon"
+            android:clickable="true"
+            android:focusable="true"
+            />
+
+        <TextView
+            android:id="@+id/tinello_hours"
+            style="@style/text_view_ahpw"
+            android:text="@string/hours"
+            android:drawableStart="@drawable/clock_icon"
+            />
+        <TextView
+            android:id="@+id/tinello_contact"
+            style="@style/text_view_ahpw"
+            android:text="@string/phone"
+            android:background="@drawable/background_border"
+            android:drawableStart="@drawable/phone_icon"
+            android:clickable="true"
+            android:focusable="true"
+            />
+
+        <TextView
+            android:id="@+id/tinello_website"
+            style="@style/text_view_ahpw"
+            android:text="@string/website"
+            android:background="@drawable/background_border"
+            android:drawableStart="@drawable/website_icon"
+            android:clickable="true"
+            android:focusable="true"
+            />
+    </LinearLayout>
+</ScrollView>
